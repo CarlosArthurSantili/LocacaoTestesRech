@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LocadoraVeiculos.Dominio.ClienteModule.Cliente">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="TipoPessoa" Type="LocadoraVeiculos.Dominio.TipoPessoaEnum">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.006" Y="0.175" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAICgAAAAAAAgAAAAACAAAAIAYAAAgAAAAEAEAA=</HashCode>
+      <FileName>ClienteModule\Cliente.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TipoPessoa" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Condutores" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LocadoraVeiculos.Dominio.ClienteModule.Condutor">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAgAAAAAAEgACAAACAACAAAYAAAAAAAAEAECA=</HashCode>
+      <FileName>ClienteModule\Condutor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cliente" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LocadoraVeiculos.Dominio.LocacaoModule.Locacao">
+    <Position X="7" Y="3" Width="2" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="TaxasSelecionadas" Type="LocadoraVeiculos.Dominio.Taxa" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="6.034" />
+        <Point X="4.062" Y="6.034" />
+        <Point X="4.062" Y="7.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Veiculo" Type="LocadoraVeiculos.Dominio.VeiculoModule.Veiculo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="5.5" />
+        <Point X="10.25" Y="5.5" />
+        <Point X="10.25" Y="6.25" />
+        <Point X="11.125" Y="6.25" />
+        <Point X="11.125" Y="6.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="MarcadorCombustivel" Type="LocadoraVeiculos.Dominio.LocacaoModule.MarcadorCombustivelEnum" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="3" />
+        <Point X="8.5" Y="1.375" />
+        <Point X="10.5" Y="1.375" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Cupom" Type="LocadoraVeiculos.Dominio.CupomModule.Cupom" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="6.425" />
+        <Point X="9.25" Y="6.425" />
+        <Point X="9.25" Y="6.925" />
+        <Point X="8.875" Y="6.925" />
+        <Point X="8.875" Y="8" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAgBQEAQAAAEAgAQACAAAAABCAaAAAQFAAAGIABA=</HashCode>
+      <FileName>LocacaoModule\Locacao.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Funcionario" />
+      <Property Name="Veiculo" />
+      <Property Name="Condutor" />
+      <Property Name="PlanoSelecionado" />
+      <Property Name="MarcadorCombustivel" />
+      <Property Name="Cupom" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="TaxasSelecionadas" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LocadoraVeiculos.Dominio.CupomModule.Cupom">
+    <Position X="8" Y="8" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAgAIgAQAEAAAAAYAAAAAAAAEAAAQ=</HashCode>
+      <FileName>CupomModule\Cupom.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Parceiro" />
+      <Property Name="Tipo" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LocadoraVeiculos.Dominio.FuncionarioModule.Funcionario">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAggAAAAAAACAAAYAAAAAEAAEAAAA=</HashCode>
+      <FileName>FuncionarioModule\Funcionario.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LocadoraVeiculos.Dominio.GrupoVeiculoModule.PlanoCobranca">
+    <Position X="10.5" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ADAAAAAAAAAEAQAAgADAAAAAAAEAAYgAAAAAAgAAABA=</HashCode>
+      <FileName>GrupoVeiculoModule\PlanoCobranca.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TipoPlano" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LocadoraVeiculos.Dominio.VeiculoModule.Veiculo">
+    <Position X="10.5" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="TipoCombustivel" Type="LocadoraVeiculos.Dominio.VeiculoModule.TipoCombustivelEnum" FixedToPoint="true">
+      <Path>
+        <Point X="10.781" Y="6.5" />
+        <Point X="10.781" Y="6.25" />
+        <Point X="11.479" Y="6.25" Type="JumpStart" />
+        <Point X="11.645" Y="6.25" Type="JumpEnd" />
+        <Point X="12.25" Y="6.25" />
+        <Point X="12.25" Y="7.75" />
+        <Point X="16.125" Y="7.75" />
+        <Point X="16.125" Y="8.062" />
+        <Point X="16.5" Y="8.062" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Grupo" Type="LocadoraVeiculos.Dominio.GrupoVeiculoModule.GrupoVeiculo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.562" Y="6.5" />
+        <Point X="11.562" Y="5.5" />
+        <Point X="13.75" Y="5.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAEAAAAIEgCBgABAAAEEQCZAAIAgAAAQgAAA=</HashCode>
+      <FileName>VeiculoModule\Veiculo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TipoCombustivel" />
+      <Property Name="Grupo" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LocadoraVeiculos.Dominio.Taxa">
+    <Position X="3.25" Y="7.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAEAAIEgAAAAAAEAAAAAYAAAAAAAAMAAAA=</HashCode>
+      <FileName>LocacaoModule\Taxa.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TipoTaxa" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Locacoes" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LocadoraVeiculos.Dominio.CupomModule.Parceiro">
+    <Position X="14" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAYAAAAAAAAEAAAA=</HashCode>
+      <FileName>CupomModule\Parceiro.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LocadoraVeiculos.Dominio.GrupoVeiculoModule.GrupoVeiculo">
+    <Position X="13.75" Y="4" Width="1.5" />
+    <AssociationLine Name="Veiculos" Type="LocadoraVeiculos.Dominio.VeiculoModule.Veiculo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.75" Y="6" />
+        <Point X="13.375" Y="6" />
+        <Point X="13.375" Y="7" />
+        <Point X="12.333" Y="7" Type="JumpStart" />
+        <Point X="12.167" Y="7" Type="JumpEnd" />
+        <Point X="12" Y="7" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="PlanosCobranca" Type="LocadoraVeiculos.Dominio.GrupoVeiculoModule.PlanoCobranca" FixedFromPoint="true">
+      <Path>
+        <Point X="13.75" Y="4.345" />
+        <Point X="12" Y="4.345" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAggAAAAAAAQAAAAYAAAAAAAAEAAAA=</HashCode>
+      <FileName>GrupoVeiculoModule\GrupoVeiculo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Veiculos" />
+      <Property Name="PlanosCobranca" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="LocadoraVeiculos.Dominio.TipoPessoaEnum">
+    <Position X="1" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClienteModule\TipoPessoa.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LocadoraVeiculos.Dominio.GrupoVeiculoModule.TipoPlanoCobrancaEnum">
+    <Position X="13.75" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>GrupoVeiculoModule\TipoPlanoCobrancaEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LocadoraVeiculos.Dominio.VeiculoModule.TipoCombustivelEnum">
+    <Position X="16.5" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>VeiculoModule\TipoCombustivelEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LocadoraVeiculos.Dominio.CupomModule.TipoCupomEnum">
+    <Position X="5.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CupomModule\TipoCupom.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LocadoraVeiculos.Dominio.TipoTaxaEnum">
+    <Position X="1" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>LocacaoModule\TipoTaxaEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LocadoraVeiculos.Dominio.LocacaoModule.MarcadorCombustivelEnum">
+    <Position X="10.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAgAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LocacaoModule\MarcadorCombustivelEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
